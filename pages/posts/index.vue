@@ -44,20 +44,20 @@
     },
     computed: {
 
-      ...mapGetters(['posts'])
+     ...mapGetters(['posts'])
 
       // before used mapGetters
       // allPosts() {
       //   return this.$store.getters.posts
       // }
     },
-    // async /*asyncData*/fetch({store}) {
-    //   let {data} = await axios.get('https://jsonplaceholder.typicode.com/posts')
-    //
-    //   //  заменяем на store
-    //   store.dispatch('setPosts', data)
-    //   // return {allPosts: data}
-    // },
+    async  fetch/*asyncData*/({store}) {
+      let {data} = await axios.get('https://jsonplaceholder.typicode.com/posts')
+
+      //  заменяем на store
+      store.dispatch('setPosts', data)
+      // return {allPosts: data}
+    },
     head: {
       title: 'List of Posts '
     }

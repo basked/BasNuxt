@@ -23,11 +23,11 @@ export const mutations = {
 
 //create actions
 export const actions = {
-  async nuxtServerInit({commit}){
-    let {data} = await axios.get('https://jsonplaceholder.typicode.com/posts');
-    commit("SET_POSTS", data);
-  }
-  // setPosts({commit}, posts) {
-  //   commit("SET_POSTS", posts);
+  // async nuxtServerInit({commit}){
+  //   let {data} = await axios.get('https://jsonplaceholder.typicode.com/posts');
+  //   commit("SET_POSTS", data);
   // }
+  setPosts({commit}, posts) {
+    commit("SET_POSTS", posts);
+  }
 }

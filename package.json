@@ -22,7 +22,8 @@
     "popper.js": "^1.15.0",
     "tls": "0.0.1",
     "vue-scrollto": "^2.15.0",
-    "vue-select": "^3.1.0"
+    "vue-select": "^3.1.0",
+    "vuex": "latest"
   },
   "devDependencies": {
     "nodemon": "^1.19.1"
