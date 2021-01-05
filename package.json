@@ -12,7 +12,7 @@
     "npmrubgenerate":"npm run generate"
   },
   "dependencies": {
-    "axios": "^0.18.1",
+    "axios": "^0.21.1",
     "cross-env": "^5.2.0",
     "devextreme": "^18.2.9",
     "devextreme-vue": "^18.2.9",
